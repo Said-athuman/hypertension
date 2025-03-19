@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypertension Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hypertension in Heart Failure Information System</h1>
+    </header>
+
+    <section id="patient-form">
+        <h2>Enter Patient Data</h2>
+        <form id="patientDataForm">
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="bp">Blood Pressure (mmHg):</label>
+            <input type="text" id="bp" required>
+
+            <label for="medication">Medication Adherence:</label>
+            <select id="medication">
+                <option value="Adherent">Adherent</option>
+                <option value="Non-Adherent">Non-Adherent</option>
+            </select>
+
+            <label for="lifestyle">Lifestyle Recommendations:</label>
+            <input type="text" id="lifestyle" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="dashboard">
+        <h2>Patient Dashboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Blood Pressure</th>
+                    <th>Medication Adherence</th>
+                    <th>Lifestyle</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="patientTableBody"></tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
